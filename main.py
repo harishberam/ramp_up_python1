@@ -46,15 +46,15 @@ print("The total  number of the words: ",word_count)
 
 ###################################################
 words =str1.split()
-d = {}
+duplicta_words = {}
 
-for word in words:
+for word in set(words):
     if words.count(word) > 1:
         if word not in d:
-            d[word] = 1
-        else:
-            d[word] += 1
-print(d)
+            d[word] = words.count(word)
+
+print("dupicate_words",duplicta_words)
+
 
 #########################################
 
